@@ -1,8 +1,8 @@
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
+eureka: # the root configuration key for Eureka settings
+  instance: # define settings related to the current application instance
+    prefer-ip-address: true # this will help the eureka server use the ip address of the service
+  client: # configurations related to the eureka client embedded
+    fetch-registry: true # this tells that the eureka client to register the current service instance with the eureka server
+    register-with-eureka: true # this setting enables fetching registry information from the eureka server, which contains information about other services in the microservices ecosystem
+    service-url: # specify the URL of the Eureka server
       defaultZone: http://localhost:8761/eureka/
