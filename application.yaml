@@ -6,3 +6,8 @@ eureka: # the root configuration key for Eureka settings
     register-with-eureka: true # this setting enables fetching registry information from the eureka server, which contains information about other services in the microservices ecosystem
     service-url: # specify the URL of the Eureka server
       defaultZone: http://localhost:8761/eureka/
+
+okta:
+  oauth2:
+    issuer: https://dev-57700317.okta.com/oauth2/default
+    audience: api://default
